@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="Dist/sweetalert-dev.js"></script>
+<link rel="stylesheet" href="Dist/sweetalert.css">
+<!-- Font Awesome -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Material Design Bootstrap -->
+<link href="css/mdb.min.css" rel="stylesheet">
+<!-- Your custom styles (optional) -->
+<link href="css/style.css" rel="stylesheet">
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<title>Tasks</title>
+<script type="text/javascript">
+	function validate(login, senha) {
+		if (login == "" || senha == "") {
+			sweetAlert("Error!", "Fill in all the fields!", "error");
+			return false;
+		}
+	}
+</script>
+</head>
+<body>
+<br>
+<br>
+<br>
+	<section class="form-simple">
+		<div class="container">
+			<!--Form with header-->
+			<form action="login" method="POST">
+			<div class="card">
+			
+				<!--Header-->
+				<div class="header pt-3 grey lighten-2">
+
+					<div class="row d-flex justify-content-center">
+						<h3 class="deep-grey-text mt-3 mb-4 pb-1 mx-5">Tasks</h3>
+					</div>
+
+				</div>
+				<!--Header-->
+
+				<div class="card-body mx-4 mt-4">
+
+					<!--Body-->
+					<div class="md-form">
+						<input type="text" id="email" name="email" class="form-control">
+						<label for="email">Email</label>
+					</div>
+
+					<div class="md-form pb-3">
+						<input type="password" id="password" name="password" class="form-control">
+						<label for="password">Password</label>
+					</div>
+
+					<div class="text-center mb-4">
+						<button type="submit" class="btn btn-danger btn-block z-depth-2">Log
+							in</button>
+					</div>
+					<p class="font-small grey-text d-flex justify-content-center">
+						You're a student? <a href="save-student"
+							class="dark-grey-text font-bold ml-1"> Sign up</a>
+					</p>
+
+				</div>
+
+			</div>
+			</form>
+			<!--/Form with header-->
+		</div>
+	</section>
+
+
+	<!-- SCRIPTS -->
+	<!-- JQuery -->
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<!-- Bootstrap tooltips -->
+	<script type="text/javascript" src="js/popper.min.js"></script>
+
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+</html>
